@@ -23,6 +23,12 @@
     <li *ngFor="let color of colores">
        {{color}}
       </li> 
+      <li>
+        <form (submit)="addcolor(color)">
+          <input  #color type="text" name="color" placeholder="Nuevo color">
+        </form>
+      </li>
   </ul>
+  
 </div>
 

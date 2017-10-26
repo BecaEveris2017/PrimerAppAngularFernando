@@ -9,6 +9,12 @@ export class AppComponent {
   title = 'app';
   name ='Fernando';
   lastname= 'Molina';
-  colores=['negro','amarillo','rojo','verde']
-  
+  colores=['negro','amarillo','rojo','verde'];
+
+  addcolor(color){
+    this.colores.push(color.value);
+    color.value="";
+    return false;
+  }
+
 }
